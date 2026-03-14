@@ -21,10 +21,17 @@
 			<property name="author" value="Rod Johnson"/>
 		</bean>
 		
-		<bean class="com.LMS.model.Librarian" id="librarian1">
+		<!--<bean class="com.LMS.model.Librarian" id="librarian1">
 			<property name="librarianId" value="101"/>
 			<property name="name" value="Amit"/>
 			<property name="book" ref="book1"/>
+			
+		</bean>-->
+
+		<bean class="com.LMS.model.Librarian" id="librarian1">
+			<constructor-arg name="librarianId" value="2"/>
+			<constructor-arg name="name" value="Amit"/>
+			<constructor-arg name="book" ref="book1"/>
 			
 		</bean>
 		
