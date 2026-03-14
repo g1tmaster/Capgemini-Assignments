@@ -8,7 +8,7 @@ import com.cg.bean.Employee;
 public class EmployeeMainNew {
 	 public static void main(String[] args) {
     	 ApplicationContext ctx=new ClassPathXmlApplicationContext("bean.xml");
-    	 Employee emp=ctx.getBean("ee",Employee.class);
+    	 Employee emp=ctx.getBean("emp",Employee.class);
     	 emp.getSbuDetails();
     	 ((ClassPathXmlApplicationContext)ctx).close();
      }
