@@ -5,7 +5,7 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
 <context:annotation-config/>
-<bean id="ee" class="com.cg.bean.Employee">
+<bean id="emp" class="com.cg.bean.Employee">
 <property name="employeeId" value="101"/>
 <property name="employeeName" value="Mohit"/>
 <property name="salary" value="76000.00"/>
@@ -35,7 +35,7 @@
     <property name="age" value="28"/>
     <property name="sbu" ref="sbu"/>
 </bean>
-<bean id="sbuPES" class="com.cg.bean.SBU">
+<bean id="sbu" class="com.cg.bean.SBU">
     <property name="sbuId" value="1001"/>
     <property name="sbuName" value="ABC"/>
     <property name="sbuHead" value="Rohan Kumar"/>
