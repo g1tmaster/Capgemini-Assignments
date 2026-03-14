@@ -41,7 +41,7 @@ public class SBU {
 
         for (Employee e : empList) {
             e.displayEmployeeDetails();
-            System.out.println("================");
+            System.out.println("============");
         }
 	}
 }
