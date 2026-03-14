@@ -11,7 +11,7 @@ public class EmployeeMainNew1 {
 	        ApplicationContext context =
 	                new ClassPathXmlApplicationContext("bean.xml");
 
-	        SBU sbu = (SBU) context.getBean("sbuPES");
+	        SBU sbu = (SBU) context.getBean("sbu");
 
 	        sbu.displaySbuDetails();
 	    }
