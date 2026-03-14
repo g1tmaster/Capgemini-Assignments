@@ -5,9 +5,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class EmployeeMain {
      public static void main(String[] args) {
-    	 ApplicationContext ctx=new ClassPathXmlApplicationContext("bean.xml");
-    	 Employee emp=ctx.getBean("ee",Employee.class);
+    	 ApplicationContext context=new ClassPathXmlApplicationContext("bean.xml");
+    	 Employee emp=ctx.getBean("emp",Employee.class);
     	 emp.displayEmployeeDetails();
-    	 ((ClassPathXmlApplicationContext)ctx).close();
+    	 ((ClassPathXmlApplicationContext)contex).close();
      }
 }
